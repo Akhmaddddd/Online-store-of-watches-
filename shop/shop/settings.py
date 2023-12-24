@@ -168,15 +168,15 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True  # Избегать ошибок если почта не верная
-EMAIL_HOST_USER = 'muhammadievaleksandr29@gmail.com'  # Адрес почты которая будит делать рассылку
-EMAIL_HOST_PASSWORD = 'ckmvnnltbnistzdc'
+EMAIL_HOST_USER = 'Sender email'  # Адрес почты которая будит делать рассылку
+EMAIL_HOST_PASSWORD = 'the secret token of google app'
 
 
 
-STRIPE_PUBLIC_KEY = 'pk_test_51KniXYAxRYRPHE83bbfdE4ksfdYA2pF8frneghPJUbP2CDE8tiFwzAnS92DVnkvC2hlzGIA0gEShDwXzK3HcRnxe009WCAo7Dc'
+STRIPE_PUBLIC_KEY = 'stripe public key'
 
 
-STRIPE_SECRET_KEY = "sk_test_51KniXYAxRYRPHE83AnQt699xPMqf2yp8jmPl1qY1WhdG5AW7mFyKqLrGjsakvGO5KWb6VQBhCrXW0w3pq2ChmlGp0027FjhCDL"
+STRIPE_SECRET_KEY = "stripe secret key"
 
 
 
