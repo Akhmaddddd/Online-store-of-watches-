@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block poster %}
+{% endblock poster %}
+
+
+
+{% block main %}
+
+<div class="container">
+    <div class="content text-center">
+        <h3>Ваша оплата прошла успешно, ожидайте связи с менеджером</h3>
+        <p>Вы можете перейти на главную страницу нажав на кнопку.</p>
+        <a href="{% url 'product_list' %}" class="btn btn-success rounded m-4">Вернуться на главную</a>
+
+    </div>
+
+</div>
+
+
+{% endblock main %}

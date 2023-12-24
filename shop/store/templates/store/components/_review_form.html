@@ -1,0 +1,24 @@
+<div class="container">
+
+
+    <p class="text-center">
+
+        <button class="btn btn-secondary rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+            Оставить отзыв
+        </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <form action="{% url 'save_review' product.slug %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ review_form.as_div }}
+
+                <button class="btn btn-success rounded" type="submit">Отправить отзыв</button>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+

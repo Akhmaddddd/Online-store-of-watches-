@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block poster %}
+{% endblock poster %}
+
+
+
+{% block main %}
+    <main>
+
+        <section class="category_products">
+            <!-- PRODUCTS FILTER START -->
+
+            <!-- PRODUCTS FILTER END -->
+
+            <!-- PRODUCTS BLOCK START -->
+            <div class="container">
+                <h2 class="text-center m-4">Моё избранное</h2>
+                <div class="row">
+                {% for product in products %}
+                {% include 'store/components/_product_card.html' %}
+                {% endfor %}
+                </div>
+            </div>
+            <!-- PRODUCTS BLOCK END -->
+
+            <!-- PAGINATION START -->
+
+
+            <!-- PAGINATION END -->
+        </section>
+    </main>
+{% endblock main %}
